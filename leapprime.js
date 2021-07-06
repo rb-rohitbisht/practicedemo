@@ -9,16 +9,17 @@ function leap(array){
 
                 if( array[i] % j == 0){
 
-                    console.log(array[i] + " - " + "leap year but not a prime number");    
+                    console.log(array[i] + " - " + "leap year but not a prime number");  
+                      
                 }
                  
             }
             
             
         }
-        else if( array[i] % j !== 0){
+        else {
             console.log(array[i] + " - " + "not a leap year but is a prime number");
-            }
+        }
         }
     }
 
