@@ -2,23 +2,29 @@
 
 var myPromise = new Promise(function(resolve, reject){  
    
-    var x= 2+3;  
-    
-    if(x==5)  
+    var x= 8+3; 
+    setTimeout(function (){
+
      
-    resolve(" executed and resolved successfully");  
-   
-    else  
-   
-    reject("rejected");  
-   
-});  
+    
+        if(x==5)  
+        
+        resolve(" executed and resolved successfully");  
+    
+        else  
+    
+        reject("rejected");  
+    
+    }, 4000 ); 
+
+});
    
 myPromise.then(function(fromResolve){  
    
     console.log("Promise is " +fromResolve);  
    
-    }).catch(function(fromReject){  
+    })
+    .catch(function(fromReject){  
    
        console.log("Promise is "+fromReject);  
      });  

@@ -1,16 +1,23 @@
 
-  function isPrime(num) {
-    if(num < 2) return false;
-  
-    for (let k = 2; k < num; k++){
-      if( num % k == 0){
-    console.log(num," is not prime");
-    return ;
-      }
-    }
-    console.log(num,"is a prime number");
-  }
-  console.log(isPrime(7))
+//   function isPrime(num) {
+//     // if(num < 2) return false;
+//     let i = 0;
+//     let k = 2;
+//   for (i; i<num.length; i++ ){
+
+//     for ( k ; k < num; k++){
+//       if( num % k == 0){
+//     console.log(num," is not prime");
+    
+//       }
+//       else {
+//          console.log(num[i]+"not prime")
+//       }
+//     }
+//     // console.log(num,"is a prime number");
+//   }
+// }
+//   isPrime([3,4,5,6,7,8]);
    
   // leap year function
    function leap(array){

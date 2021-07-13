@@ -4,22 +4,49 @@
 
 //here i am work with js promise
 
+
 async function myDisplay() 
 {  
+    try{
     let myPromise = new Promise(function(myResolve, myReject)
      {  
       setTimeout(function() {
         
-        let flag = true;
+        let flag = false;
         if(flag){
 
             myResolve("fullfilled");
         }
         else{
-            myReject("not fullfilled");
+             myReject('not fullfilled')
         }
-    },3000);
+       
+        
+    },4000);
     });  
+   
+    //    myPromise.then(function(resolve)
+    //                                 {
+    //                                     console.log("promise"+resolve )
+    //                                 }
+    //                  )
+           
+        
+
     console.log( await myPromise);  
-  }  
-  myDisplay(); 
+
+
+
+
+
+}
+
+catch(error){
+
+console.log("error is " +error)
+}
+}
+  myDisplay();
+
+  
+
