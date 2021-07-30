@@ -31,29 +31,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Scroll To
-const links = [...document.querySelectorAll(".scroll-link")];
-links.map(link => {
-  if (!link) return;
-  link.addEventListener("click", e => {
-    e.preventDefault();
-
-    const id = e.target.getAttribute("href").slice(1);
-
-    const element = document.getElementById(id);
-    const fixNav = navBar.classList.contains("fix-nav");
-    let position = element.offsetTop - navHeight;
-
-    window.scrollTo({
-      top: position,
-      left: 0,
-    });
-
-    navBar.classList.remove("show");
-    menu.classList.remove("show");
-    document.body.classList.remove("show");
-  });
-});
 
 gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1, x: 20 });
