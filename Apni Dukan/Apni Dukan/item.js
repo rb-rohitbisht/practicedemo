@@ -106,35 +106,53 @@ const menu= [
 //        document.getElementById("all-items").appendChild(ItemEle)
 // }
 
-const sectionCenter = document.getElementsByClassName('card');
-console.log(sectionCenter)
-window.addEventListener("DOMContentLoaded", function () {
-    diplayMenuItems(menu);
+// const sectionCenter = document.getElementsByClassName('card');
+// console.log(sectionCenter)
+// window.addEventListener("DOMContentLoaded", function () {
+//     diplayMenuItems(menu);
     
-  });
-  function diplayMenuItems(menuItems) {
-    let displayMenu = menuItems.map(function (item) {
-console.log(item);
-ItemEle.innerHTML =` 
-<div class="card-item">
-    <img src=${item.img} alt="img" id="card-img">
-    <p id="item-name">${item.name}</p>
-</div>
-<i class="fa fa-shopping-cart" id="add-to-cart"></i>
-<i class="fa fa-heart" id="icon"></i>
-<h3 id="item-price">Price : $ ${item.price}</h3>            
-`;
+//   });
+//   function diplayMenuItems(menuItems) {
+//     let displayMenu = menuItems.map(function (item) {
+// console.log(item);
+// ItemEle.innerHTML =` 
+// <div class="card-item">
+//     <img src=${item.img} alt="img" id="card-img">
+//     <p id="item-name">${item.name}</p>
+// </div>
+// <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+// <i class="fa fa-heart" id="icon"></i>
+// <h3 id="item-price">Price : $ ${item.price}</h3>            
+// `;
        
-    });
-    displayMenu = displayMenu.join("");
-  console.log(displayMenu);
+//     });
+//     displayMenu = displayMenu.join("");
+//   console.log(displayMenu);
 
-  document.getElementById("all-items").appendChild(ItemEle)
-    }
+//   document.getElementById("all-items").appendChild(ItemEle)
+//     }
+
+let listsItems = document.getElementsByClassName("all-items")
 
 
+console.log("workinng")
 
-// let item = document.querySelector('.item-container');
+for(let i = 0 ; i <= menu.length ; i = i +1){
+    let items = menu[i]
+     let item =  document.createElement("div")
+     item.setAttribute('class','item-container')
+     item.id = items.id;
+
+     item.innerHTML =` 
+             <div class="card-item">
+                <img src=${items.img} alt="img" id="card-img">
+                  <p id="item-name">${items.name}</p>
+              </div>
+              <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+              <i class="fa fa-heart" id="icon"></i>
+              <h3 id="item-price">Price : $ ${items.price}</h3>            
+          `;
+
 // let div1 = document.createElement('div');
 // div1.setAttribute('class','card-item');
 // item.appendChild(div1);
@@ -164,4 +182,6 @@ ItemEle.innerHTML =`
 
 
 
-// console.log(item)
+console.log(i,menu.length ,items ,item, listsItems)
+document.getElementById("all-items").appendChild(item)
+}
