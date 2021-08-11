@@ -136,7 +136,7 @@ body{
     position: relative;
 }
 .item-container:hover{
-    background: lavender;
+    background: rgb(65, 65, 68);
     transition: all 0.7s ease-in-out;
 }
 .item-container:hover #card-img{
@@ -160,7 +160,7 @@ body{
 }
 #add-to-cart{
     font-size: 2.5rem;
-    color: rgb(155, 85, 96);
+    color: rgb(7, 7, 7);
     position: absolute;
     bottom: 1rem;
     right: 0.8rem;
@@ -170,7 +170,7 @@ body{
 }
 #icon{ 
     font-size: 2.5rem;
-    color: rgb(155, 85, 96);
+    color: rgb(61, 24, 228);
     position: absolute;
     bottom: 5rem;
     right: 0.8rem;

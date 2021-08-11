@@ -143,7 +143,8 @@ for(let i = 0 ; i <= menu.length ; i = i +1){
     let items = menu[i]
      let item =  document.createElement("div")
      item.setAttribute('class','item-container')
-     item.id = items.id;
+     item.setAttribute('id',items.id);
+    //  item.id = items.id;
 
      item.innerHTML =` 
              <div class="card-item">

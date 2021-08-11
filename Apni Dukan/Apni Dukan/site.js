@@ -146,8 +146,8 @@ document.addEventListener('click',function (e){
 
 
 //click event to display details page
-for(i=0;i<data.length;i++){
-    detail[i].addEventListener('click',handleDetail)
+for( i=0;i<data.length;i++){
+    detail[i].addEventListener('click',handleDetail);
 }
 
 var getId;
