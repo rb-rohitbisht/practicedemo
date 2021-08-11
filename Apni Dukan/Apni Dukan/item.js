@@ -62,27 +62,27 @@ const menu= [
         price : 100
       
     },
-    // {
-    //     id : 9,
-    //     img : './images/pic11.jpg',
-    //     name : 'Boys Jeans',
-    //     price : 100
+    {
+        id : 9,
+        img : './images/pic11.jpg',
+        name : 'Boys Jeans',
+        price : 100
         
-    // },
-    // {
-    //     id : 10,
-    //     img : './images/pic12.jpg',
-    //     name : ' T-shirt Black',
-    //     price : 100
+    },
+    {
+        id : 10,
+        img : './images/pic12.jpg',
+        name : ' T-shirt Black',
+        price : 100
        
-    // },
-    // {
-    //     id : 11,
-    //     img : './images/pic13.jpg',
-    //     name : 'Boys T-shirt',
-    //     price : 100
+    },
+    {
+        id : 11,
+        img : './images/pic13.jpg',
+        name : 'Boys T-shirt',
+        price : 100
        
-    // },
+    },
 ];
 
 // for(let i = 0 ; i <=menu.length ; i = i +1){
@@ -132,9 +132,11 @@ const menu= [
 //   document.getElementById("all-items").appendChild(ItemEle)
 //     }
 
-let listsItems = document.getElementsByClassName("all-items")
+// let listsItems = document.getElementsByClassName("all-items")
+// console.log(listsItems)
 
-
+let listsItems = document.getElementsByClassName('card')
+console.log(listsItems)
 console.log("workinng")
 
 for(let i = 0 ; i <= menu.length ; i = i +1){
@@ -183,5 +185,6 @@ for(let i = 0 ; i <= menu.length ; i = i +1){
 
 
 console.log(i,menu.length ,items ,item, listsItems)
+
 document.getElementById("all-items").appendChild(item)
 }

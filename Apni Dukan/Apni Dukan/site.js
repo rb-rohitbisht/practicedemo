@@ -80,33 +80,33 @@ const data= [
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
-    // {
-    //     id : 9,
-    //     img : './images/pic11.jpg',
-    //     name : 'Boys Jeans',
-    //     price : 100,
-    //     save : 10,
-    //     delievery : 'In 3 - 4 days',
-    //     itemInCart: false
-    // },
-    // {
-    //     id : 10,
-    //     img : './images/pic12.jpg',
-    //     name : ' T-shirt Black',
-    //     price : 100,
-    //     save : 10,
-    //     delievery : 'In 3 - 4 days',
-    //     itemInCart: false
-    // },
-    // {
-    //     id : 11,
-    //     img : './images/pic13.jpg',
-    //     name : 'Boys T-shirt',
-    //     price : 100,
-    //     save : 10,
-    //     delievery : 'In 3 - 4 days',
-    //     itemInCart: false
-    // },
+    {
+        id : 9,
+        img : './images/pic11.jpg',
+        name : 'Boys Jeans',
+        price : 100,
+        save : 10,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 10,
+        img : './images/pic12.jpg',
+        name : ' T-shirt Black',
+        price : 100,
+        save : 10,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 11,
+        img : './images/pic13.jpg',
+        name : 'Boys T-shirt',
+        price : 100,
+        save : 10,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
 ];
 
 let cartList=[]; //array to store cart lists
